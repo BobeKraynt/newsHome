@@ -1,0 +1,358 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'Inter' ;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter' ;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter' ;
+    src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+#svg-menu-close {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+.low-brightness {
+    color: black;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    max-width: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: hsl(36, 100%, 99%) ;
+    width: 80%;
+    justify-content: center;
+    
+}
+
+.svg-container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-left: 3vw;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: hsl(236, 13%, 42%);
+}
+
+a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.banner {
+    display: grid;
+    grid-template-rows: fit-content(100%) fit-content(100%);
+}
+
+.bannerText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bannerImg {
+    max-width: 100%;
+}
+
+.heading {
+    font-size: 4vw;
+    margin-top: 8%;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    line-height: 100%;
+}
+
+.textWBtn {
+    display: grid;
+    font-size: 1.10vw;
+    line-height: 150%;
+    grid-gap: 2vw;
+    margin-top: 8%;
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 0;
+    align-items: flex-end;
+
+}
+
+button {
+    width: 60%;
+    height: 100%;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    color: hsl(36, 100%, 99%);
+    font-size: 100%;
+}
+
+.context {
+    display: grid;
+    grid-template-columns: 7fr minmax(15vw, 25vw);
+}
+
+aside {
+    margin-left: 5%;
+    color: white;
+    background-color: hsl(240, 100%, 5%);
+    font-size: 1.10vw;
+
+}
+
+.asideContent {
+    margin: 2vw;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.last {
+    border: none;
+}
+
+.asideContent p {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.10vw;
+}
+
+.asideContent h2 {
+    color:hsl(233, 8%, 79%);
+    font-size: 1.5vw;
+}
+
+.asideHeading {
+    margin: 2vw;
+    color:  hsl(35, 77%, 62%);
+    font-size: 3vw;
+}
+
+.related {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10vh;
+    font-size: 1vw;
+    grid-gap: 2vw;
+    margin-bottom: 5vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: fit-content(8vw) 1fr;
+  grid-gap: 1vw;
+}
+
+.cardText h1 {
+    font-size: 2.2vw ;
+    font-weight: 800;
+    color: hsl(233, 8%, 79%);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.cardText h2 {
+    font-size: 1.3vw ;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    margin-top: 0%;
+}
+
+.cardText p {
+    font-size: 1.3vw ;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 0px;
+}
+
+
+footer .attribution {
+    background-color:hsl(240, 100%, 5%);     
+    color: hsl(233, 8%, 79%);     
+    padding: 0.5em;    
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .context {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .svg-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    #svg-menu {
+        width: 10vw;
+        height: 4vw;
+        margin-top: 2vw;
+    }
+    #svg-menu:hover {
+        filter: invert(49%) sepia(15%) saturate(4799%) hue-rotate(330deg) brightness(101%) contrast(89%);
+    }
+    nav {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: grid;
+        margin-bottom: -5%;
+    }
+    .bannerText {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .next{
+        display: none;
+    }
+    .heading {
+        font-size: 10vw;
+    }
+    .textWBtn {
+        font-size: 3.4vw;
+        margin-top: -10%;
+    }
+    button {
+        width: 30vw;
+        font-size: 2vw;
+        height: 7vw;
+        letter-spacing: 0.5vw;
+        margin-bottom: 9vw;
+    }
+    aside {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        width: 100;
+        height: 100vw;
+    }
+    .asideHeading {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-left: 4vw;
+    }
+    .asideContent h2{
+        font-size: 4vw;
+        margin-left: 2vw;
+    }
+    .asideContent p{
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+    .related {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .cardImg {
+        width: 23vw;
+    }
+    .cardText h1 {
+        font-size: 6vw;
+        margin-left: 6%;
+    }
+    .cardText h2 {
+        font-size: 4vw;
+        margin-left: 6%;
+    }
+    .cardText p {
+        font-size: 3vw;
+        margin-left: 6%;
+    }
+#sidebar ul {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 20fr;
+        grid-gap: 5vw;
+        padding: 0;
+        margin-top: 40%;
+    }
+    #sidebar {
+        display: grid;
+        grid-template-columns: auto ;
+        background-color: hsl(36, 100%, 99%);
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 0;
+        width: 0vw;
+    }
+    #sidebar ul li a {
+        font-size: 15px;
+        color: black;
+        font-weight: 600;
+    }
+    #svg-menu-close {
+        display: block;
+        position: relative;
+        left: 80%;
+        margin-top: 7%;
+        width: 5vw;
+    }
+    #sidebar ul li a:hover {
+        color: #f15e50;
+    }
+    #svg-menu-close:hover {
+        filter: invert(49%) sepia(15%) saturate(4799%) hue-rotate(330deg) brightness(101%) contrast(89%);
+    }
+    #dark {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.500);
+        height: 100%;
+        width: 70vw;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        display: none;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+  } 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="dark"></div>
+  <div id="sidebar">
+    <img onclick="closeSidebar()" id="svg-menu-close"src="./assets/images/icon-menu-close.svg" alt="">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+    </ul>
+  </div>
+  <header>
+    <div class="svg-container">
+      <img class="svg-logo" src="./assets/images/logo.svg" alt="">
+      <img onclick="openSidebar()" id="svg-menu" src="./assets/images/icon-menu.svg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+  </nav>
+  </header>
+    <main>
+      <section class="context">
+        <article class="banner">
+          <img class="bannerImg desktop" src="./assets/images/image-web-3-desktop.jpg" alt="Web3.0">
+          <img class="bannerImg mobile" src="./assets/images/image-web-3-mobile.jpg" alt="Web3.0">
+          <div class="bannerText">
+            <h1 class="heading">The Bright <br class="next"> Future of <br class="next"> Web 3.0?</h1>
+            <p class="textWBtn"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise? 
+            <button> Read more </button> </p>
+          </div>
+        </article>
+        <aside>
+          <h1 class="asideHeading">New </h1>
+          <div class="asideContent">
+          <h2>Hydrogen VS Electric Cars </h2>
+          <p> Will hydrogen-fueled cars ever catch up to EVs? </p>
+        </div>
+        <div class="asideContent">
+          <h2>The Downsides of AI Artistry</h2>
+          <p> What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="asideContent last">
+          <h2>Is VC Funding Drying Up?</h2>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+        </aside>
+      </section>
+      <section class="related">
+        <div class="card">
+          <img src="./assets/images/image-retro-pcs.jpg"  class="cardImg" alt="retroPc" width="100%">
+          <div class="cardText">
+            <h1>01</h1>
+            <h2>Reviving Retro PCs</h2>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/image-top-laptops.jpg" class="cardImg" alt="Top10Laptops" width="100%">
+          <div class="cardText">
+            <h1>02</h1>
+            <h2>Top 10 Laptops of 2022</h2>
+            <p>Our best picks for various needs and budgets.</p> 
+          </div> 
+        </div>
+        <div class="card">
+          <img src="./assets/images/image-gaming-growth.jpg" class="cardImg" alt="gamingGrowth" width="100%">
+          <div class="cardText">
+            <h1>03</h1>
+            <h2>The Growth of Gaming</h2>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yasin</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
